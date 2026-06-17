@@ -1,0 +1,1397 @@
+{
+    "file": "configuration.yaml",
+    "description": "Common configuration file path globs on Linux systems",
+    "author": "Richard A. Dubniczky",
+    "items": [
+        {
+            "name": "Lampp",
+            "type": "ini",
+            "glob": [
+                "**/lampp/**/httpd.conf"
+            ]
+        },
+        {
+            "name": "Apache2",
+            "type": "ini",
+            "glob": [
+                "**/apache2/**/apache2.conf",
+                "**/apache2/**/httpd.conf",
+                "**/httpd/**/httpd.conf"
+            ]
+        },
+        {
+            "name": "NGINX",
+            "type": "dsl",
+            "glob": [
+                "**/nginx/nginx.conf"
+            ]
+        },
+        {
+            "name": "WordPress",
+            "type": "php",
+            "glob": [
+                "**/wp-config.php"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "type": "ini",
+            "glob": [
+                "**/my.cnf"
+            ]
+        },
+        {
+            "name": "Redis",
+            "type": "ini",
+            "glob": [
+                "**/redis.conf"
+            ]
+        },
+        {
+            "name": "PostreSQL",
+            "type": "ini",
+            "glob": [
+                "/etc/postgresql/*/main/postgresql.conf",
+                "**/postgresql.conf"
+            ]
+        },
+        {
+            "name": "SSH",
+            "type": "custom",
+            "glob": [
+                "**/sshd_config"
+            ]
+        },
+        {
+            "name": "Samba",
+            "type": "ini",
+            "glob": [
+                "**/samba/smb.conf"
+            ]
+        },
+        {
+            "name": "Confluence",
+            "type": "xml",
+            "glob": [
+                "/var/atlassian/application-data/confluence/confluence.cfg.xml",
+                "**/confluence.cfg.xml"
+            ]
+        },
+        {
+            "name": "Tomcat",
+            "type": "xml",
+            "glob": [
+                "**/tomcat*/server.xml"
+            ]
+        },
+        {
+            "name": "Docker",
+            "type": "json",
+            "glob": [
+                "/etc/docker/daemon.json",
+                "**/daemon.json"
+            ]
+        },
+        {
+            "name": "Docker Compose",
+            "type": "yaml",
+            "glob": [
+                "**/docker-compose.yml",
+                "**/compose.yml"
+            ]
+        },
+        {
+            "name": "Memcached",
+            "type": "ini",
+            "glob": [
+                "/etc/memcached.conf",
+                "**/memcached.conf"
+            ]
+        },
+        {
+            "name": "PHP",
+            "type": "ini",
+            "glob": [
+                "/etc/php.ini",
+                "**/php.ini"
+            ]
+        },
+        {
+            "name": "PHP-FPM",
+            "type": "ini",
+            "glob": [
+                "/etc/php/*/fpm/php-fpm.conf",
+                "/etc/php/*/fpm/pool.d/*.conf",
+                "**/php-fpm.conf"
+            ]
+        },
+        {
+            "name": "Postfix",
+            "type": "ini",
+            "glob": [
+                "/etc/postfix/main.cf",
+                "**/postfix/**/main.cf"
+            ]
+        },
+        {
+            "name": "Dovecot",
+            "type": "ini",
+            "glob": [
+                "/etc/dovecot/dovecot.conf",
+                "**/dovecot.conf"
+            ]
+        },
+        {
+            "name": "VSFTPD",
+            "type": "ini",
+            "glob": [
+                "/etc/vsftpd.conf",
+                "**/vsftpd.conf"
+            ]
+        },
+        {
+            "name": "HAProxy",
+            "type": "ini",
+            "glob": [
+                "/etc/haproxy/haproxy.cfg",
+                "**/haproxy/haproxy.cfg"
+            ]
+        },
+        {
+            "name": "Elasticsearch",
+            "type": "yaml",
+            "glob": [
+                "/etc/elasticsearch/elasticsearch.yml",
+                "**/elasticsearch.yml"
+            ]
+        },
+        {
+            "name": "RabbitMQ",
+            "type": "ini",
+            "glob": [
+                "/etc/rabbitmq/rabbitmq.conf",
+                "/etc/rabbitmq/advanced.config",
+                "**/rabbitmq.conf"
+            ]
+        },
+        {
+            "name": "Supervisor",
+            "type": "ini",
+            "glob": [
+                "/etc/supervisord.conf",
+                "/etc/supervisor/supervisord.conf",
+                "**/supervisord.conf"
+            ]
+        },
+        {
+            "name": "Fail2Ban",
+            "type": "ini",
+            "glob": [
+                "/etc/fail2ban/jail.local",
+                "/etc/fail2ban/jail.conf",
+                "**/fail2ban/**/jail.local"
+            ]
+        },
+        {
+            "name": "BIND",
+            "type": "conf",
+            "glob": [
+                "/etc/bind/named.conf",
+                "/etc/named.conf",
+                "**/named.conf"
+            ]
+        },
+        {
+            "name": "ZooKeeper",
+            "type": "ini",
+            "glob": [
+                "/etc/zookeeper/conf/zoo.cfg",
+                "/opt/zookeeper/conf/zoo.cfg",
+                "**/zookeeper/**/zoo.cfg"
+            ]
+        },
+        {
+            "name": "Prometheus",
+            "type": "yaml",
+            "glob": [
+                "/etc/prometheus/prometheus.yml",
+                "**/prometheus/prometheus.yml"
+            ]
+        },
+        {
+            "name": "Grafana",
+            "type": "ini",
+            "glob": [
+                "/etc/grafana/grafana.ini",
+                "**/grafana/grafana.ini"
+            ]
+        },
+        {
+            "name": "Kibana",
+            "type": "yaml",
+            "glob": [
+                "/etc/kibana/kibana.yml",
+                "**/kibana/kibana.yml"
+            ]
+        },
+        {
+            "name": "Jenkins",
+            "type": "xml",
+            "glob": [
+                "/var/lib/jenkins/config.xml",
+                "/var/lib/jenkins/jobs/**/config.xml",
+                "/etc/default/jenkins",
+                "/etc/sysconfig/jenkins"
+            ]
+        },
+        {
+            "name": "Consul",
+            "type": "json",
+            "glob": [
+                "/etc/consul.d/*.json",
+                "/etc/consul.d/*.hcl",
+                "**/consul.d/*.hcl"
+            ]
+        },
+        {
+            "name": "Vault",
+            "type": "hcl",
+            "glob": [
+                "/etc/vault.d/vault.hcl",
+                "/etc/vault.d/*.hcl",
+                "**/vault.d/*.hcl"
+            ]
+        },
+        {
+            "name": "etcd",
+            "type": "yaml",
+            "glob": [
+                "/etc/etcd/etcd.conf.yml",
+                "/etc/etcd/etcd.conf",
+                "/etc/etcd/etcd.yaml"
+            ]
+        },
+        {
+            "name": "OpenVPN",
+            "type": "custom",
+            "glob": [
+                "/etc/openvpn/*.conf",
+                "/etc/openvpn/server/*.conf",
+                "/etc/openvpn/client/*.conf"
+            ]
+        },
+        {
+            "name": "NTP",
+            "type": "custom",
+            "glob": [
+                "/etc/ntp.conf",
+                "/etc/ntpd.conf",
+                "/etc/chrony/chrony.conf",
+                "/etc/chrony.conf"
+            ]
+        },
+        {
+            "name": "rsyslog",
+            "type": "custom",
+            "glob": [
+                "/etc/rsyslog.conf",
+                "/etc/rsyslog.d/*.conf"
+            ]
+        },
+        {
+            "name": "syslog-ng",
+            "type": "custom",
+            "glob": [
+                "/etc/syslog-ng/syslog-ng.conf",
+                "/etc/syslog-ng/conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "SSSD",
+            "type": "ini",
+            "glob": [
+                "/etc/sssd/sssd.conf",
+                "/etc/sssd/conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "OpenLDAP",
+            "type": "custom",
+            "glob": [
+                "/etc/ldap/slapd.conf",
+                "/etc/openldap/slapd.conf",
+                "/etc/ldap/slapd.d/**/*.ldif",
+                "/etc/openldap/slapd.d/**/*.ldif",
+                "/etc/ldap/ldap.conf",
+                "/etc/openldap/ldap.conf"
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "type": "yaml",
+            "glob": [
+                "/etc/mongod.conf",
+                "**/mongod.conf"
+            ]
+        },
+        {
+            "name": "Cassandra",
+            "type": "yaml",
+            "glob": [
+                "/etc/cassandra/cassandra.yaml",
+                "**/cassandra/cassandra.yaml"
+            ]
+        },
+        {
+            "name": "Apache Kafka",
+            "type": "properties",
+            "glob": [
+                "/etc/kafka/server.properties",
+                "/opt/kafka/config/server.properties",
+                "**/kafka/config/server.properties"
+            ]
+        },
+        {
+            "name": "Logstash",
+            "type": "yaml",
+            "glob": [
+                "/etc/logstash/logstash.yml",
+                "/etc/logstash/conf.d/*.conf",
+                "**/logstash/logstash.yml"
+            ]
+        },
+        {
+            "name": "Filebeat",
+            "type": "yaml",
+            "glob": [
+                "/etc/filebeat/filebeat.yml",
+                "**/filebeat/filebeat.yml"
+            ]
+        },
+        {
+            "name": "Metricbeat",
+            "type": "yaml",
+            "glob": [
+                "/etc/metricbeat/metricbeat.yml",
+                "**/metricbeat/metricbeat.yml"
+            ]
+        },
+        {
+            "name": "Fluentd",
+            "type": "custom",
+            "glob": [
+                "/etc/fluent/fluent.conf",
+                "/etc/td-agent/td-agent.conf",
+                "/etc/fluent/conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "Zabbix",
+            "type": "ini",
+            "glob": [
+                "/etc/zabbix/zabbix_server.conf",
+                "/etc/zabbix/zabbix_agentd.conf",
+                "/etc/zabbix/zabbix_proxy.conf",
+                "**/zabbix/zabbix_server.conf"
+            ]
+        },
+        {
+            "name": "Nagios",
+            "type": "ini",
+            "glob": [
+                "/etc/nagios/nagios.cfg",
+                "/etc/nagios3/nagios.cfg",
+                "/etc/nagios4/nagios.cfg",
+                "/usr/local/nagios/etc/nagios.cfg"
+            ]
+        },
+        {
+            "name": "Icinga",
+            "type": "custom",
+            "glob": [
+                "/etc/icinga2/icinga2.conf",
+                "/etc/icinga2/conf.d/*.conf",
+                "/etc/icinga/icinga.cfg"
+            ]
+        },
+        {
+            "name": "Munin",
+            "type": "ini",
+            "glob": [
+                "/etc/munin/munin.conf",
+                "/etc/munin/munin-node.conf",
+                "/etc/munin/plugin-conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "Apache HTTP Server",
+            "type": "custom",
+            "glob": [
+                "/etc/apache2/apache2.conf",
+                "/etc/apache2/sites-enabled/*.conf",
+                "/etc/apache2/conf-enabled/*.conf",
+                "/etc/httpd/conf/httpd.conf",
+                "/etc/httpd/conf.d/*.conf",
+                "/usr/local/apache2/conf/httpd.conf",
+                "**/apache2/apache2.conf",
+                "**/httpd/conf/httpd.conf"
+            ]
+        },
+        {
+            "name": "Squid",
+            "type": "custom",
+            "glob": [
+                "/etc/squid/squid.conf",
+                "/etc/squid3/squid.conf",
+                "**/squid/squid.conf"
+            ]
+        },
+        {
+            "name": "collectd",
+            "type": "custom",
+            "glob": [
+                "/etc/collectd/collectd.conf",
+                "/etc/collectd.conf",
+                "/etc/collectd/collectd.d/*.conf"
+            ]
+        },
+        {
+            "name": "Pure-FTPd",
+            "type": "ini",
+            "glob": [
+                "/etc/pure-ftpd/pure-ftpd.conf",
+                "/etc/pure-ftpd.conf",
+                "/etc/pure-ftpd/conf/*"
+            ]
+        },
+        {
+            "name": "ProFTPd",
+            "type": "custom",
+            "glob": [
+                "/etc/proftpd/proftpd.conf",
+                "/etc/proftpd.conf",
+                "/etc/proftpd/conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "Sendmail",
+            "type": "custom",
+            "glob": [
+                "/etc/mail/sendmail.cf",
+                "/etc/sendmail.cf",
+                "/etc/mail/sendmail.mc",
+                "**/mail/sendmail.cf"
+            ]
+        },
+        {
+            "name": "Exim",
+            "type": "custom",
+            "glob": [
+                "/etc/exim4/exim4.conf",
+                "/etc/exim4/conf.d/main/00_exim4-config_listmacrosdefs",
+                "/etc/exim/exim.conf",
+                "**/exim4/exim4.conf"
+            ]
+        },
+        {
+            "name": "vsftpd",
+            "type": "ini",
+            "glob": [
+                "/etc/vsftpd.conf",
+                "/etc/vsftpd/vsftpd.conf",
+                "**/vsftpd.conf"
+            ]
+        },
+        {
+            "name": "Keepalived",
+            "type": "custom",
+            "glob": [
+                "/etc/keepalived/keepalived.conf",
+                "**/keepalived/keepalived.conf"
+            ]
+        },
+        {
+            "name": "Varnish",
+            "type": "custom",
+            "glob": [
+                "/etc/varnish/default.vcl",
+                "/etc/varnish/varnish.params",
+                "/etc/default/varnish",
+                "**/varnish/default.vcl"
+            ]
+        },
+        {
+            "name": "Traefik",
+            "type": "yaml",
+            "glob": [
+                "/etc/traefik/traefik.yml",
+                "/etc/traefik/traefik.yaml",
+                "/etc/traefik/traefik.toml",
+                "**/traefik/traefik.yml"
+            ]
+        },
+        {
+            "name": "Alertmanager",
+            "type": "yaml",
+            "glob": [
+                "/etc/alertmanager/alertmanager.yml",
+                "**/alertmanager/alertmanager.yml"
+            ]
+        },
+        {
+            "name": "InfluxDB",
+            "type": "toml",
+            "glob": [
+                "/etc/influxdb/influxdb.conf",
+                "/etc/influxdb/influxdb.toml",
+                "**/influxdb/influxdb.conf"
+            ]
+        },
+        {
+            "name": "Telegraf",
+            "type": "toml",
+            "glob": [
+                "/etc/telegraf/telegraf.conf",
+                "/etc/telegraf/telegraf.d/*.conf",
+                "**/telegraf/telegraf.conf"
+            ]
+        },
+        {
+            "name": "ActiveMQ",
+            "type": "custom",
+            "glob": [
+                "/etc/activemq/activemq.xml",
+                "/usr/share/activemq/conf/activemq.xml",
+                "**/activemq/activemq.xml"
+            ]
+        },
+        {
+            "name": "CouchDB",
+            "type": "ini",
+            "glob": [
+                "/etc/couchdb/local.ini",
+                "/etc/couchdb/default.ini",
+                "/opt/couchdb/etc/local.ini",
+                "**/couchdb/local.ini"
+            ]
+        },
+        {
+            "name": "Neo4j",
+            "type": "custom",
+            "glob": [
+                "/etc/neo4j/neo4j.conf",
+                "/var/lib/neo4j/conf/neo4j.conf",
+                "**/neo4j/neo4j.conf"
+            ]
+        },
+        {
+            "name": "MinIO",
+            "type": "custom",
+            "glob": [
+                "/etc/minio/minio.env",
+                "/etc/default/minio",
+                "/etc/sysconfig/minio",
+                "**/minio/minio.env"
+            ]
+        },
+        {
+            "name": "containerd",
+            "type": "toml",
+            "glob": [
+                "/etc/containerd/config.toml",
+                "**/containerd/config.toml"
+            ]
+        },
+        {
+            "name": "Kubernetes",
+            "type": "yaml",
+            "glob": [
+                "/etc/kubernetes/*.yaml",
+                "/etc/kubernetes/manifests/*.yaml",
+                "/etc/kubernetes/pki/*.conf",
+                "~/.kube/config",
+                "**/kube/config"
+            ]
+        },
+        {
+            "name": "WireGuard",
+            "type": "ini",
+            "glob": [
+                "/etc/wireguard/*.conf",
+                "**/wireguard/*.conf"
+            ]
+        },
+        {
+            "name": "GitLab",
+            "type": "custom",
+            "glob": [
+                "/etc/gitlab/gitlab.rb",
+                "/etc/gitlab/gitlab.yml",
+                "**/gitlab/gitlab.rb"
+            ]
+        },
+        {
+            "name": "fail2ban",
+            "type": "ini",
+            "glob": [
+                "/etc/fail2ban/jail.conf",
+                "/etc/fail2ban/jail.local",
+                "/etc/fail2ban/jail.d/*.conf",
+                "/etc/fail2ban/fail2ban.conf",
+                "**/fail2ban/jail.conf"
+            ]
+        },
+        {
+            "name": "iptables",
+            "type": "custom",
+            "glob": [
+                "/etc/iptables/rules.v4",
+                "/etc/iptables/rules.v6",
+                "/etc/sysconfig/iptables",
+                "/etc/sysconfig/ip6tables"
+            ]
+        },
+        {
+            "name": "ufw",
+            "type": "ini",
+            "glob": [
+                "/etc/ufw/ufw.conf",
+                "/etc/ufw/before.rules",
+                "/etc/ufw/after.rules",
+                "/etc/default/ufw"
+            ]
+        },
+        {
+            "name": "NFS",
+            "type": "custom",
+            "glob": [
+                "/etc/exports",
+                "/etc/nfs.conf",
+                "/etc/nfsmount.conf"
+            ]
+        },
+        {
+            "name": "Unbound",
+            "type": "custom",
+            "glob": [
+                "/etc/unbound/unbound.conf",
+                "/etc/unbound/unbound.conf.d/*.conf",
+                "**/unbound/unbound.conf"
+            ]
+        },
+        {
+            "name": "ISC DHCP",
+            "type": "custom",
+            "glob": [
+                "/etc/dhcp/dhcpd.conf",
+                "/etc/dhcpd.conf",
+                "/etc/dhcp/dhcpd6.conf",
+                "**/dhcp/dhcpd.conf"
+            ]
+        },
+        {
+            "name": "Chrony",
+            "type": "custom",
+            "glob": [
+                "/etc/chrony.conf",
+                "/etc/chrony/chrony.conf",
+                "**/chrony.conf"
+            ]
+        },
+        {
+            "name": "logrotate",
+            "type": "custom",
+            "glob": [
+                "/etc/logrotate.conf",
+                "/etc/logrotate.d/*",
+                "**/logrotate.conf"
+            ]
+        },
+        {
+            "name": "cron",
+            "type": "custom",
+            "glob": [
+                "/etc/crontab",
+                "/etc/cron.d/*",
+                "/var/spool/cron/crontabs/*"
+            ]
+        },
+        {
+            "name": "systemd",
+            "type": "ini",
+            "glob": [
+                "/etc/systemd/system/*.service",
+                "/etc/systemd/system/*.timer",
+                "/etc/systemd/system/*.socket",
+                "/etc/systemd/system/*.target",
+                "/lib/systemd/system/*.service",
+                "/usr/lib/systemd/system/*.service",
+                "/etc/systemd/journald.conf",
+                "/etc/systemd/logind.conf",
+                "/etc/systemd/system.conf"
+            ]
+        },
+        {
+            "name": "Ansible",
+            "type": "ini",
+            "glob": [
+                "/etc/ansible/ansible.cfg",
+                "~/.ansible.cfg",
+                "**/ansible.cfg"
+            ]
+        },
+        {
+            "name": "Terraform",
+            "type": "custom",
+            "glob": [
+                "**/*.tf",
+                "**/*.tfvars",
+                "**/.terraform.lock.hcl"
+            ]
+        },
+        {
+            "name": "Puppet",
+            "type": "ini",
+            "glob": [
+                "/etc/puppet/puppet.conf",
+                "/etc/puppetlabs/puppet/puppet.conf",
+                "**/puppet/puppet.conf"
+            ]
+        },
+        {
+            "name": "Chef",
+            "type": "custom",
+            "glob": [
+                "/etc/chef/client.rb",
+                "/etc/chef/solo.rb",
+                "**/chef/client.rb"
+            ]
+        },
+        {
+            "name": "Salt",
+            "type": "yaml",
+            "glob": [
+                "/etc/salt/master",
+                "/etc/salt/minion",
+                "/etc/salt/proxy",
+                "/etc/salt/cloud",
+                "**/salt/master"
+            ]
+        },
+        {
+            "name": "Pacemaker",
+            "type": "custom",
+            "glob": [
+                "/etc/pacemaker/authkey",
+                "/var/lib/pacemaker/cib/cib.xml",
+                "/etc/corosync/corosync.conf"
+            ]
+        },
+        {
+            "name": "Corosync",
+            "type": "custom",
+            "glob": [
+                "/etc/corosync/corosync.conf",
+                "**/corosync/corosync.conf"
+            ]
+        },
+        {
+            "name": "OpenSSL",
+            "type": "ini",
+            "glob": [
+                "/etc/ssl/openssl.cnf",
+                "/usr/lib/ssl/openssl.cnf",
+                "/usr/local/ssl/openssl.cnf",
+                "**/openssl.cnf"
+            ]
+        },
+        {
+            "name": "StrongSwan",
+            "type": "custom",
+            "glob": [
+                "/etc/ipsec.conf",
+                "/etc/strongswan.conf",
+                "/etc/strongswan.d/*.conf",
+                "/etc/ipsec.d/*.conf"
+            ]
+        },
+        {
+            "name": "OpenSWAN",
+            "type": "custom",
+            "glob": [
+                "/etc/ipsec.conf",
+                "/etc/ipsec.d/*.conf"
+            ]
+        },
+        {
+            "name": "Asterisk",
+            "type": "ini",
+            "glob": [
+                "/etc/asterisk/asterisk.conf",
+                "/etc/asterisk/sip.conf",
+                "/etc/asterisk/extensions.conf",
+                "/etc/asterisk/manager.conf",
+                "/etc/asterisk/*.conf"
+            ]
+        },
+        {
+            "name": "Ruby on Rails",
+            "type": "yaml",
+            "glob": [
+                "**/config/database.yml",
+                "**/config/application.rb",
+                "**/config/environments/*.rb",
+                "**/config/initializers/*.rb"
+            ]
+        },
+        {
+            "name": "Puma",
+            "type": "custom",
+            "glob": [
+                "**/config/puma.rb",
+                "**/puma.rb"
+            ]
+        },
+        {
+            "name": "Unicorn",
+            "type": "custom",
+            "glob": [
+                "**/config/unicorn.rb",
+                "**/unicorn.rb"
+            ]
+        },
+        {
+            "name": "Gunicorn",
+            "type": "ini",
+            "glob": [
+                "**/gunicorn.conf.py",
+                "**/gunicorn.ini",
+                "/etc/gunicorn.conf.py"
+            ]
+        },
+        {
+            "name": "uWSGI",
+            "type": "ini",
+            "glob": [
+                "/etc/uwsgi/uwsgi.ini",
+                "/etc/uwsgi/apps-enabled/*.ini",
+                "**/uwsgi.ini",
+                "**/*.uwsgi.ini"
+            ]
+        },
+        {
+            "name": "Celery",
+            "type": "custom",
+            "glob": [
+                "**/celeryconfig.py",
+                "**/celery.py"
+            ]
+        },
+        {
+            "name": "Monit",
+            "type": "custom",
+            "glob": [
+                "/etc/monit/monitrc",
+                "/etc/monitrc",
+                "/etc/monit/conf.d/*.conf",
+                "/etc/monit.d/*.conf",
+                "**/monitrc"
+            ]
+        },
+        {
+            "name": "Gitea",
+            "type": "ini",
+            "glob": [
+                "/etc/gitea/app.ini",
+                "/var/lib/gitea/custom/conf/app.ini",
+                "**/gitea/app.ini"
+            ]
+        },
+        {
+            "name": "Gogs",
+            "type": "ini",
+            "glob": [
+                "/etc/gogs/app.ini",
+                "/home/git/gogs/custom/conf/app.ini",
+                "**/gogs/app.ini"
+            ]
+        },
+        {
+            "name": "Concourse CI",
+            "type": "yaml",
+            "glob": [
+                "/etc/concourse/web.yml",
+                "/etc/concourse/worker.yml",
+                "**/concourse/*.yml"
+            ]
+        },
+        {
+            "name": "Caddy",
+            "type": "custom",
+            "glob": [
+                "/etc/caddy/Caddyfile",
+                "/usr/local/etc/caddy/Caddyfile",
+                "**/Caddyfile"
+            ]
+        },
+        {
+            "name": "lighttpd",
+            "type": "custom",
+            "glob": [
+                "/etc/lighttpd/lighttpd.conf",
+                "/etc/lighttpd/conf-enabled/*.conf",
+                "**/lighttpd/lighttpd.conf"
+            ]
+        },
+        {
+            "name": "Pound",
+            "type": "custom",
+            "glob": [
+                "/etc/pound/pound.cfg",
+                "/etc/pound.cfg",
+                "**/pound.cfg"
+            ]
+        },
+        {
+            "name": "Stunnel",
+            "type": "ini",
+            "glob": [
+                "/etc/stunnel/stunnel.conf",
+                "/etc/stunnel/*.conf",
+                "**/stunnel.conf"
+            ]
+        },
+        {
+            "name": "389 Directory Server",
+            "type": "custom",
+            "glob": [
+                "/etc/dirsrv/slapd-*/dse.ldif",
+                "/etc/dirsrv/slapd-*/schema/*.ldif"
+            ]
+        },
+        {
+            "name": "FreeIPA",
+            "type": "ini",
+            "glob": [
+                "/etc/ipa/default.conf",
+                "/etc/ipa/ca.crt",
+                "**/ipa/default.conf"
+            ]
+        },
+        {
+            "name": "Kerberos",
+            "type": "ini",
+            "glob": [
+                "/etc/krb5.conf",
+                "/etc/krb5.conf.d/*.conf",
+                "/var/kerberos/krb5kdc/kdc.conf"
+            ]
+        },
+        {
+            "name": "Cyrus SASL",
+            "type": "custom",
+            "glob": [
+                "/etc/sasl2/*.conf",
+                "/usr/lib/sasl2/*.conf",
+                "**/sasl2/*.conf"
+            ]
+        },
+        {
+            "name": "ClamAV",
+            "type": "custom",
+            "glob": [
+                "/etc/clamav/clamd.conf",
+                "/etc/clamav/freshclam.conf",
+                "**/clamav/clamd.conf"
+            ]
+        },
+        {
+            "name": "AppArmor",
+            "type": "custom",
+            "glob": [
+                "/etc/apparmor/parser.conf",
+                "/etc/apparmor.d/*",
+                "/etc/apparmor.d/tunables/*"
+            ]
+        },
+        {
+            "name": "SELinux",
+            "type": "custom",
+            "glob": [
+                "/etc/selinux/config",
+                "/etc/selinux/semanage.conf"
+            ]
+        },
+        {
+            "name": "Auditd",
+            "type": "custom",
+            "glob": [
+                "/etc/audit/auditd.conf",
+                "/etc/audit/rules.d/*.rules",
+                "/etc/audit/audit.rules",
+                "**/audit/auditd.conf"
+            ]
+        },
+        {
+            "name": "PAM",
+            "type": "custom",
+            "glob": [
+                "/etc/pam.conf",
+                "/etc/pam.d/*",
+                "**/pam.d/*"
+            ]
+        },
+        {
+            "name": "sudo",
+            "type": "custom",
+            "glob": [
+                "/etc/sudoers",
+                "/etc/sudoers.d/*"
+            ]
+        },
+        {
+            "name": "NSS",
+            "type": "custom",
+            "glob": [
+                "/etc/nsswitch.conf",
+                "/etc/nss.conf"
+            ]
+        },
+        {
+            "name": "CUPS",
+            "type": "custom",
+            "glob": [
+                "/etc/cups/cupsd.conf",
+                "/etc/cups/cups-pdf.conf",
+                "/etc/cups/printers.conf",
+                "**/cups/cupsd.conf"
+            ]
+        },
+        {
+            "name": "SNMP",
+            "type": "custom",
+            "glob": [
+                "/etc/snmp/snmpd.conf",
+                "/etc/snmp/snmptrapd.conf",
+                "**/snmp/snmpd.conf"
+            ]
+        },
+        {
+            "name": "Postfix Admin",
+            "type": "custom",
+            "glob": [
+                "/etc/postfixadmin/dbconfig.inc.php",
+                "/usr/share/postfixadmin/config.inc.php"
+            ]
+        },
+        {
+            "name": "Roundcube",
+            "type": "custom",
+            "glob": [
+                "/etc/roundcube/config.inc.php",
+                "/usr/share/roundcube/config/config.inc.php",
+                "**/roundcube/config.inc.php"
+            ]
+        },
+        {
+            "name": "Nextcloud",
+            "type": "custom",
+            "glob": [
+                "/var/www/html/nextcloud/config/config.php",
+                "**/nextcloud/config/config.php"
+            ]
+        },
+        {
+            "name": "Drupal",
+            "type": "custom",
+            "glob": [
+                "**/sites/default/settings.php",
+                "**/sites/*/settings.php"
+            ]
+        },
+        {
+            "name": "MediaWiki",
+            "type": "custom",
+            "glob": [
+                "**/LocalSettings.php"
+            ]
+        },
+        {
+            "name": "Joomla",
+            "type": "custom",
+            "glob": [
+                "**/configuration.php"
+            ]
+        },
+        {
+            "name": "Mattermost",
+            "type": "json",
+            "glob": [
+                "/etc/mattermost/config.json",
+                "/opt/mattermost/config/config.json",
+                "**/mattermost/config/config.json"
+            ]
+        },
+        {
+            "name": "Rocketchat",
+            "type": "custom",
+            "glob": [
+                "/etc/rocketchat/config.env",
+                "/opt/Rocket.Chat/.env"
+            ]
+        },
+        {
+            "name": "Syncthing",
+            "type": "custom",
+            "glob": [
+                "~/.config/syncthing/config.xml",
+                "/var/lib/syncthing/config.xml",
+                "**/syncthing/config.xml"
+            ]
+        },
+        {
+            "name": "Restic",
+            "type": "custom",
+            "glob": [
+                "/etc/restic/restic.conf",
+                "**/restic.conf",
+                "**/.restic.env"
+            ]
+        },
+        {
+            "name": "Bacula",
+            "type": "custom",
+            "glob": [
+                "/etc/bacula/bacula-dir.conf",
+                "/etc/bacula/bacula-fd.conf",
+                "/etc/bacula/bacula-sd.conf",
+                "**/bacula/bacula-dir.conf"
+            ]
+        },
+        {
+            "name": "Amanda",
+            "type": "custom",
+            "glob": [
+                "/etc/amanda/amanda.conf",
+                "/etc/amanda/*/amanda.conf",
+                "**/amanda.conf"
+            ]
+        },
+        {
+            "name": "Bareos",
+            "type": "custom",
+            "glob": [
+                "/etc/bareos/bareos-dir.conf",
+                "/etc/bareos/bareos-fd.conf",
+                "/etc/bareos/bareos-sd.conf",
+                "/etc/bareos/bareos-dir.d/*.conf"
+            ]
+        },
+        {
+            "name": "OpenStack",
+            "type": "ini",
+            "glob": [
+                "/etc/nova/nova.conf",
+                "/etc/neutron/neutron.conf",
+                "/etc/keystone/keystone.conf",
+                "/etc/glance/glance-api.conf",
+                "/etc/cinder/cinder.conf",
+                "/etc/swift/swift.conf",
+                "/etc/heat/heat.conf"
+            ]
+        },
+        {
+            "name": "Ceph",
+            "type": "ini",
+            "glob": [
+                "/etc/ceph/ceph.conf",
+                "**/ceph/ceph.conf"
+            ]
+        },
+        {
+            "name": "GlusterFS",
+            "type": "custom",
+            "glob": [
+                "/etc/glusterfs/glusterd.vol",
+                "/etc/glusterfs/*.vol",
+                "**/glusterfs/glusterd.vol"
+            ]
+        },
+        {
+            "name": "DRBD",
+            "type": "custom",
+            "glob": [
+                "/etc/drbd.conf",
+                "/etc/drbd.d/*.res",
+                "**/drbd.conf"
+            ]
+        },
+        {
+            "name": "LVM",
+            "type": "custom",
+            "glob": [
+                "/etc/lvm/lvm.conf",
+                "**/lvm/lvm.conf"
+            ]
+        },
+        {
+            "name": "mdadm",
+            "type": "custom",
+            "glob": [
+                "/etc/mdadm/mdadm.conf",
+                "/etc/mdadm.conf"
+            ]
+        },
+        {
+            "name": "fstab",
+            "type": "custom",
+            "glob": [
+                "/etc/fstab"
+            ]
+        },
+        {
+            "name": "grub",
+            "type": "custom",
+            "glob": [
+                "/etc/grub.d/*",
+                "/etc/default/grub",
+                "/boot/grub/grub.cfg",
+                "/boot/grub2/grub.cfg"
+            ]
+        },
+        {
+            "name": "NetworkManager",
+            "type": "ini",
+            "glob": [
+                "/etc/NetworkManager/NetworkManager.conf",
+                "/etc/NetworkManager/system-connections/*.nmconnection",
+                "/etc/NetworkManager/conf.d/*.conf"
+            ]
+        },
+        {
+            "name": "netplan",
+            "type": "yaml",
+            "glob": [
+                "/etc/netplan/*.yaml",
+                "/etc/netplan/*.yml"
+            ]
+        },
+        {
+            "name": "wpa_supplicant",
+            "type": "custom",
+            "glob": [
+                "/etc/wpa_supplicant/wpa_supplicant.conf",
+                "/etc/wpa_supplicant/wpa_supplicant-*.conf"
+            ]
+        },
+        {
+            "name": "hostapd",
+            "type": "ini",
+            "glob": [
+                "/etc/hostapd/hostapd.conf",
+                "**/hostapd/hostapd.conf"
+            ]
+        },
+        {
+            "name": "dnsmasq",
+            "type": "custom",
+            "glob": [
+                "/etc/dnsmasq.conf",
+                "/etc/dnsmasq.d/*.conf",
+                "**/dnsmasq.conf"
+            ]
+        },
+        {
+            "name": "PowerDNS",
+            "type": "ini",
+            "glob": [
+                "/etc/powerdns/pdns.conf",
+                "/etc/powerdns/recursor.conf",
+                "**/powerdns/pdns.conf"
+            ]
+        },
+        {
+            "name": "Knot DNS",
+            "type": "custom",
+            "glob": [
+                "/etc/knot/knot.conf",
+                "**/knot/knot.conf"
+            ]
+        },
+        {
+            "name": "tinc",
+            "type": "custom",
+            "glob": [
+                "/etc/tinc/*/tinc.conf",
+                "**/tinc/tinc.conf"
+            ]
+        },
+        {
+            "name": "Tor",
+            "type": "custom",
+            "glob": [
+                "/etc/tor/torrc",
+                "**/tor/torrc"
+            ]
+        },
+        {
+            "name": "Privoxy",
+            "type": "custom",
+            "glob": [
+                "/etc/privoxy/config",
+                "**/privoxy/config"
+            ]
+        },
+        {
+            "name": "ModSecurity",
+            "type": "custom",
+            "glob": [
+                "/etc/modsecurity/modsecurity.conf",
+                "/etc/apache2/mods-enabled/modsecurity.conf",
+                "**/modsecurity/modsecurity.conf"
+            ]
+        },
+        {
+            "name": "Suricata",
+            "type": "yaml",
+            "glob": [
+                "/etc/suricata/suricata.yaml",
+                "**/suricata/suricata.yaml"
+            ]
+        },
+        {
+            "name": "Snort",
+            "type": "custom",
+            "glob": [
+                "/etc/snort/snort.conf",
+                "**/snort/snort.conf"
+            ]
+        },
+        {
+            "name": "Zeek",
+            "type": "custom",
+            "glob": [
+                "/etc/zeek/site/local.zeek",
+                "/etc/zeek/zeekctl.cfg",
+                "/usr/local/zeek/etc/zeekctl.cfg"
+            ]
+        },
+        {
+            "name": "OSSEC",
+            "type": "custom",
+            "glob": [
+                "/var/ossec/etc/ossec.conf",
+                "**/ossec/etc/ossec.conf"
+            ]
+        },
+        {
+            "name": "Wazuh",
+            "type": "custom",
+            "glob": [
+                "/var/ossec/etc/ossec.conf",
+                "/var/ossec/etc/client.keys",
+                "**/wazuh/etc/ossec.conf"
+            ]
+        }
+    ]
+}
