@@ -1,0 +1,80 @@
+[items]
+[[items]]
+name = "Backup copies"
+type = "any"
+glob = [
+    "**/*.bak",
+    "**/*.bk",
+    "**/*.bkp",
+    "**/*.backup",
+    "**/*.old",
+    "**/*.orig",
+    "**/*.save",
+    "**/*.sav",
+    "**/*.copy",
+    "**/*.prev",
+]
+
+[[items]]
+name = "Files and folders named backup"
+type = "any"
+glob = [
+    "**/backup*",
+    "**/Backup*",
+    "**/*_backup*",
+    "**/*-backup*",
+]
+
+[[items]]
+name = "Editor swap and backup files"
+type = "any"
+glob = [
+    "**/*~",
+    "**/*.swp",
+    "**/*.swo",
+    "**/*.un~",
+    "**/#*#",
+]
+
+[[items]]
+name = "Database dumps"
+type = "any"
+glob = [
+    "**/*.sql",
+    "**/*.sql.gz",
+    "**/*.dump",
+]
+
+[[items]]
+name = "Zip archives"
+type = "zip"
+glob = [
+    "**/*.zip",
+    "**/*.7z",
+    "**/*.rar",
+]
+
+[[items]]
+name = "Tar archives"
+type = "tar"
+glob = [
+    "**/*.tar",
+    "**/*.tar.gz",
+    "**/*.tgz",
+    "**/*.tar.bz2",
+    "**/*.tbz2",
+    "**/*.tar.xz",
+    "**/*.txz",
+    "**/*.tar.zst",
+]
+
+[[items]]
+name = "Compressed files"
+type = "any"
+glob = [
+    "**/*.gz",
+    "**/*.bz2",
+    "**/*.xz",
+    "**/*.zst",
+]
+

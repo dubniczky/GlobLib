@@ -1,0 +1,8 @@
+name,type,glob 1,glob 2,glob 3,glob 4,glob 5,glob 6,glob 7,glob 8,glob 9,glob 10
+Backup copies,any,**/*.bak,**/*.bk,**/*.bkp,**/*.backup,**/*.old,**/*.orig,**/*.save,**/*.sav,**/*.copy,**/*.prev
+Files and folders named backup,any,**/backup*,**/Backup*,**/*_backup*,**/*-backup*
+Editor swap and backup files,any,**/*~,**/*.swp,**/*.swo,**/*.un~,**/#*#
+Database dumps,any,**/*.sql,**/*.sql.gz,**/*.dump
+Zip archives,zip,**/*.zip,**/*.7z,**/*.rar
+Tar archives,tar,**/*.tar,**/*.tar.gz,**/*.tgz,**/*.tar.bz2,**/*.tbz2,**/*.tar.xz,**/*.txz,**/*.tar.zst
+Compressed files,any,**/*.gz,**/*.bz2,**/*.xz,**/*.zst

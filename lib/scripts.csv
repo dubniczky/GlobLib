@@ -1,0 +1,21 @@
+name,type,glob 1,glob 2,glob 3,glob 4,glob 5,glob 6,glob 7,glob 8
+Shell scripts,sh,**/*.sh,**/*.bash,**/*.zsh,**/*.ksh,**/*.csh,**/*.tcsh,**/*.fish,**/*.command
+Python,py,**/*.py,**/*.pyw,**/*.pyc,**/*.pyz
+Perl,pl,**/*.pl,**/*.pm,**/*.cgi
+Ruby,rb,**/*.rb,**/*.ru,**/Rakefile
+PHP,php,**/*.php,**/*.phtml,**/*.php3,**/*.php4,**/*.php5,**/*.php7,**/*.phps,**/*.phar
+JavaScript and TypeScript,js,**/*.js,**/*.mjs,**/*.cjs,**/*.ts,**/*.mts,**/*.cts
+Lua,lua,**/*.lua
+Tcl and Expect,tcl,**/*.tcl,**/*.tk,**/*.exp
+AWK,awk,**/*.awk
+R,r,**/*.r,**/*.R
+Julia,jl,**/*.jl
+Elixir and Erlang,any,**/*.exs,**/*.escript
+Groovy and Kotlin scripts,groovy,**/*.groovy,**/*.gvy,**/*.kts,**/Jenkinsfile
+PowerShell,ps1,**/*.ps1,**/*.psm1,**/*.psd1
+Windows batch,bat,**/*.bat,**/*.cmd
+Windows Script Host,vbs,**/*.vbs,**/*.vbe,**/*.jse,**/*.wsf,**/*.wsh
+HTML Applications,html,**/*.hta
+AutoHotkey and AutoIt,any,**/*.ahk,**/*.au3
+AppleScript,any,**/*.applescript,**/*.scpt
+Startup and scheduled scripts,sh,**/etc/init.d/*,**/etc/rc.local,**/etc/cron.d/*,**/etc/cron.hourly/*,**/etc/cron.daily/*,**/etc/cron.weekly/*,**/etc/cron.monthly/*,**/etc/profile.d/*.sh

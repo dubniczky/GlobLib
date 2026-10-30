@@ -1,0 +1,200 @@
+[items]
+[[items]]
+name = "SQLite"
+type = "sqlite"
+glob = [
+    "**/*.db",
+    "**/*.sqlite",
+    "**/*.sqlite3",
+    "**/*.db3",
+    "**/*.s3db",
+    "**/*.sl3",
+]
+
+[[items]]
+name = "SQL dumps"
+type = "sql"
+glob = [
+    "**/*.sql",
+    "**/*.dump",
+]
+
+[[items]]
+name = "Microsoft Access"
+type = "any"
+glob = [
+    "**/*.mdb",
+    "**/*.accdb",
+]
+
+[[items]]
+name = "Microsoft SQL Server"
+type = "any"
+glob = [
+    "**/*.mdf",
+    "**/*.ndf",
+    "**/*.ldf",
+]
+
+[[items]]
+name = "Microsoft SQL Server Compact"
+type = "any"
+glob = [
+    "**/*.sdf",
+]
+
+[[items]]
+name = "Extensible Storage Engine (ESE)"
+type = "any"
+glob = [
+    "**/*.edb",
+]
+
+[[items]]
+name = "MySQL and MariaDB data files"
+type = "any"
+glob = [
+    "**/mysql/user.MYD",
+    "**/mysql/global_priv.MAD",
+    "**/mysql.ibd",
+    "**/*.ibd",
+    "**/ibdata1",
+]
+
+[[items]]
+name = "PostgreSQL"
+type = "any"
+glob = [
+    "**/postgresql/**/global/1260",
+    "**/pgdata/global/1260",
+    "**/*.pgdump",
+    "**/*.pgsql",
+    "**/.pgpass",
+]
+
+[[items]]
+name = "Oracle"
+type = "any"
+glob = [
+    "**/oradata/**/*.dbf",
+    "**/*.dmp",
+]
+
+[[items]]
+name = "dBase and FoxPro"
+type = "any"
+glob = [
+    "**/*.dbf",
+]
+
+[[items]]
+name = "Firebird and InterBase"
+type = "any"
+glob = [
+    "**/*.fdb",
+    "**/*.gdb",
+]
+
+[[items]]
+name = "H2"
+type = "any"
+glob = [
+    "**/*.h2.db",
+    "**/*.mv.db",
+]
+
+[[items]]
+name = "DuckDB"
+type = "any"
+glob = [
+    "**/*.duckdb",
+]
+
+[[items]]
+name = "MongoDB"
+type = "any"
+glob = [
+    "**/mongodb/**/*.wt",
+    "**/WiredTiger.wt",
+    "**/*.bson",
+]
+
+[[items]]
+name = "Redis"
+type = "any"
+glob = [
+    "**/dump.rdb",
+    "**/*.rdb",
+    "**/appendonly.aof",
+    "**/appendonlydir/*.aof",
+]
+
+[[items]]
+name = "CouchDB"
+type = "any"
+glob = [
+    "**/*.couch",
+]
+
+[[items]]
+name = "Cassandra"
+type = "any"
+glob = [
+    "**/cassandra/data/**/*-Data.db",
+]
+
+[[items]]
+name = "Neo4j"
+type = "any"
+glob = [
+    "**/neo4j/data/dbms/auth",
+    "**/neo4j/data/dbms/auth.ini",
+    "**/neo4j/data/databases/**",
+]
+
+[[items]]
+name = "Elasticsearch and OpenSearch"
+type = "any"
+glob = [
+    "**/elasticsearch/data/**",
+    "**/opensearch/data/**",
+]
+
+[[items]]
+name = "InfluxDB"
+type = "any"
+glob = [
+    "**/influxdb/**/*.tsm",
+    "**/influxd.bolt",
+]
+
+[[items]]
+name = "etcd"
+type = "any"
+glob = [
+    "**/member/snap/db",
+    "**/etcd/**/*.snap",
+]
+
+[[items]]
+name = "LevelDB"
+type = "any"
+glob = [
+    "**/leveldb/*.ldb",
+    "**/leveldb/*.log",
+]
+
+[[items]]
+name = "LMDB"
+type = "any"
+glob = [
+    "**/data.mdb",
+]
+
+[[items]]
+name = "Realm"
+type = "any"
+glob = [
+    "**/*.realm",
+]
+

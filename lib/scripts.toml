@@ -1,0 +1,190 @@
+[items]
+[[items]]
+name = "Shell scripts"
+type = "sh"
+glob = [
+    "**/*.sh",
+    "**/*.bash",
+    "**/*.zsh",
+    "**/*.ksh",
+    "**/*.csh",
+    "**/*.tcsh",
+    "**/*.fish",
+    "**/*.command",
+]
+
+[[items]]
+name = "Python"
+type = "py"
+glob = [
+    "**/*.py",
+    "**/*.pyw",
+    "**/*.pyc",
+    "**/*.pyz",
+]
+
+[[items]]
+name = "Perl"
+type = "pl"
+glob = [
+    "**/*.pl",
+    "**/*.pm",
+    "**/*.cgi",
+]
+
+[[items]]
+name = "Ruby"
+type = "rb"
+glob = [
+    "**/*.rb",
+    "**/*.ru",
+    "**/Rakefile",
+]
+
+[[items]]
+name = "PHP"
+type = "php"
+glob = [
+    "**/*.php",
+    "**/*.phtml",
+    "**/*.php3",
+    "**/*.php4",
+    "**/*.php5",
+    "**/*.php7",
+    "**/*.phps",
+    "**/*.phar",
+]
+
+[[items]]
+name = "JavaScript and TypeScript"
+type = "js"
+glob = [
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.cjs",
+    "**/*.ts",
+    "**/*.mts",
+    "**/*.cts",
+]
+
+[[items]]
+name = "Lua"
+type = "lua"
+glob = [
+    "**/*.lua",
+]
+
+[[items]]
+name = "Tcl and Expect"
+type = "tcl"
+glob = [
+    "**/*.tcl",
+    "**/*.tk",
+    "**/*.exp",
+]
+
+[[items]]
+name = "AWK"
+type = "awk"
+glob = [
+    "**/*.awk",
+]
+
+[[items]]
+name = "R"
+type = "r"
+glob = [
+    "**/*.r",
+    "**/*.R",
+]
+
+[[items]]
+name = "Julia"
+type = "jl"
+glob = [
+    "**/*.jl",
+]
+
+[[items]]
+name = "Elixir and Erlang"
+type = "any"
+glob = [
+    "**/*.exs",
+    "**/*.escript",
+]
+
+[[items]]
+name = "Groovy and Kotlin scripts"
+type = "groovy"
+glob = [
+    "**/*.groovy",
+    "**/*.gvy",
+    "**/*.kts",
+    "**/Jenkinsfile",
+]
+
+[[items]]
+name = "PowerShell"
+type = "ps1"
+glob = [
+    "**/*.ps1",
+    "**/*.psm1",
+    "**/*.psd1",
+]
+
+[[items]]
+name = "Windows batch"
+type = "bat"
+glob = [
+    "**/*.bat",
+    "**/*.cmd",
+]
+
+[[items]]
+name = "Windows Script Host"
+type = "vbs"
+glob = [
+    "**/*.vbs",
+    "**/*.vbe",
+    "**/*.jse",
+    "**/*.wsf",
+    "**/*.wsh",
+]
+
+[[items]]
+name = "HTML Applications"
+type = "html"
+glob = [
+    "**/*.hta",
+]
+
+[[items]]
+name = "AutoHotkey and AutoIt"
+type = "any"
+glob = [
+    "**/*.ahk",
+    "**/*.au3",
+]
+
+[[items]]
+name = "AppleScript"
+type = "any"
+glob = [
+    "**/*.applescript",
+    "**/*.scpt",
+]
+
+[[items]]
+name = "Startup and scheduled scripts"
+type = "sh"
+glob = [
+    "**/etc/init.d/*",
+    "**/etc/rc.local",
+    "**/etc/cron.d/*",
+    "**/etc/cron.hourly/*",
+    "**/etc/cron.daily/*",
+    "**/etc/cron.weekly/*",
+    "**/etc/cron.monthly/*",
+    "**/etc/profile.d/*.sh",
+]
+

@@ -1,0 +1,134 @@
+file: scripts.yaml
+description: Scripts and other files that run through an interpreter without being
+  compiled first
+author: Richard A. Dubniczky
+items:
+- name: Shell scripts
+  type: sh
+  glob:
+  - '**/*.sh'
+  - '**/*.bash'
+  - '**/*.zsh'
+  - '**/*.ksh'
+  - '**/*.csh'
+  - '**/*.tcsh'
+  - '**/*.fish'
+  - '**/*.command'
+- name: Python
+  type: py
+  glob:
+  - '**/*.py'
+  - '**/*.pyw'
+  - '**/*.pyc'
+  - '**/*.pyz'
+- name: Perl
+  type: pl
+  glob:
+  - '**/*.pl'
+  - '**/*.pm'
+  - '**/*.cgi'
+- name: Ruby
+  type: rb
+  glob:
+  - '**/*.rb'
+  - '**/*.ru'
+  - '**/Rakefile'
+- name: PHP
+  type: php
+  glob:
+  - '**/*.php'
+  - '**/*.phtml'
+  - '**/*.php3'
+  - '**/*.php4'
+  - '**/*.php5'
+  - '**/*.php7'
+  - '**/*.phps'
+  - '**/*.phar'
+- name: JavaScript and TypeScript
+  type: js
+  glob:
+  - '**/*.js'
+  - '**/*.mjs'
+  - '**/*.cjs'
+  - '**/*.ts'
+  - '**/*.mts'
+  - '**/*.cts'
+- name: Lua
+  type: lua
+  glob:
+  - '**/*.lua'
+- name: Tcl and Expect
+  type: tcl
+  glob:
+  - '**/*.tcl'
+  - '**/*.tk'
+  - '**/*.exp'
+- name: AWK
+  type: awk
+  glob:
+  - '**/*.awk'
+- name: R
+  type: r
+  glob:
+  - '**/*.r'
+  - '**/*.R'
+- name: Julia
+  type: jl
+  glob:
+  - '**/*.jl'
+- name: Elixir and Erlang
+  type: any
+  glob:
+  - '**/*.exs'
+  - '**/*.escript'
+- name: Groovy and Kotlin scripts
+  type: groovy
+  glob:
+  - '**/*.groovy'
+  - '**/*.gvy'
+  - '**/*.kts'
+  - '**/Jenkinsfile'
+- name: PowerShell
+  type: ps1
+  glob:
+  - '**/*.ps1'
+  - '**/*.psm1'
+  - '**/*.psd1'
+- name: Windows batch
+  type: bat
+  glob:
+  - '**/*.bat'
+  - '**/*.cmd'
+- name: Windows Script Host
+  type: vbs
+  glob:
+  - '**/*.vbs'
+  - '**/*.vbe'
+  - '**/*.jse'
+  - '**/*.wsf'
+  - '**/*.wsh'
+- name: HTML Applications
+  type: html
+  glob:
+  - '**/*.hta'
+- name: AutoHotkey and AutoIt
+  type: any
+  glob:
+  - '**/*.ahk'
+  - '**/*.au3'
+- name: AppleScript
+  type: any
+  glob:
+  - '**/*.applescript'
+  - '**/*.scpt'
+- name: Startup and scheduled scripts
+  type: sh
+  glob:
+  - '**/etc/init.d/*'
+  - '**/etc/rc.local'
+  - '**/etc/cron.d/*'
+  - '**/etc/cron.hourly/*'
+  - '**/etc/cron.daily/*'
+  - '**/etc/cron.weekly/*'
+  - '**/etc/cron.monthly/*'
+  - '**/etc/profile.d/*.sh'

@@ -1,0 +1,25 @@
+name,type,glob 1,glob 2,glob 3,glob 4,glob 5,glob 6
+SQLite,sqlite,**/*.db,**/*.sqlite,**/*.sqlite3,**/*.db3,**/*.s3db,**/*.sl3
+SQL dumps,sql,**/*.sql,**/*.dump
+Microsoft Access,any,**/*.mdb,**/*.accdb
+Microsoft SQL Server,any,**/*.mdf,**/*.ndf,**/*.ldf
+Microsoft SQL Server Compact,any,**/*.sdf
+Extensible Storage Engine (ESE),any,**/*.edb
+MySQL and MariaDB data files,any,**/mysql/user.MYD,**/mysql/global_priv.MAD,**/mysql.ibd,**/*.ibd,**/ibdata1
+PostgreSQL,any,**/postgresql/**/global/1260,**/pgdata/global/1260,**/*.pgdump,**/*.pgsql,**/.pgpass
+Oracle,any,**/oradata/**/*.dbf,**/*.dmp
+dBase and FoxPro,any,**/*.dbf
+Firebird and InterBase,any,**/*.fdb,**/*.gdb
+H2,any,**/*.h2.db,**/*.mv.db
+DuckDB,any,**/*.duckdb
+MongoDB,any,**/mongodb/**/*.wt,**/WiredTiger.wt,**/*.bson
+Redis,any,**/dump.rdb,**/*.rdb,**/appendonly.aof,**/appendonlydir/*.aof
+CouchDB,any,**/*.couch
+Cassandra,any,**/cassandra/data/**/*-Data.db
+Neo4j,any,**/neo4j/data/dbms/auth,**/neo4j/data/dbms/auth.ini,**/neo4j/data/databases/**
+Elasticsearch and OpenSearch,any,**/elasticsearch/data/**,**/opensearch/data/**
+InfluxDB,any,**/influxdb/**/*.tsm,**/influxd.bolt
+etcd,any,**/member/snap/db,**/etcd/**/*.snap
+LevelDB,any,**/leveldb/*.ldb,**/leveldb/*.log
+LMDB,any,**/data.mdb
+Realm,any,**/*.realm

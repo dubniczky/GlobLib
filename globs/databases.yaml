@@ -1,0 +1,155 @@
+file: databases.yaml
+description: Local database files that can be dumped for user tables and password hashes
+author: Richard A. Dubniczky
+items:
+
+- name: "SQLite"
+  type: sqlite
+  glob:
+  - "**/*.db"
+  - "**/*.sqlite"
+  - "**/*.sqlite3"
+  - "**/*.db3"
+  - "**/*.s3db"
+  - "**/*.sl3"
+
+- name: "SQL dumps"
+  type: sql
+  glob:
+  - "**/*.sql"
+  - "**/*.dump"
+
+- name: "Microsoft Access"
+  type: any
+  glob:
+  - "**/*.mdb"
+  - "**/*.accdb"
+
+- name: "Microsoft SQL Server"
+  type: any
+  glob:
+  - "**/*.mdf"
+  - "**/*.ndf"
+  - "**/*.ldf"
+
+- name: "Microsoft SQL Server Compact"
+  type: any
+  glob:
+  - "**/*.sdf"
+
+- name: "Extensible Storage Engine (ESE)"
+  type: any
+  glob:
+  - "**/*.edb"
+
+- name: "MySQL and MariaDB data files"
+  type: any
+  glob:
+  - "**/mysql/user.MYD"
+  - "**/mysql/global_priv.MAD"
+  - "**/mysql.ibd"
+  - "**/*.ibd"
+  - "**/ibdata1"
+
+- name: "PostgreSQL"
+  type: any
+  glob:
+  - "**/postgresql/**/global/1260"
+  - "**/pgdata/global/1260"
+  - "**/*.pgdump"
+  - "**/*.pgsql"
+  - "**/.pgpass"
+
+- name: "Oracle"
+  type: any
+  glob:
+  - "**/oradata/**/*.dbf"
+  - "**/*.dmp"
+
+- name: "dBase and FoxPro"
+  type: any
+  glob:
+  - "**/*.dbf"
+
+- name: "Firebird and InterBase"
+  type: any
+  glob:
+  - "**/*.fdb"
+  - "**/*.gdb"
+
+- name: "H2"
+  type: any
+  glob:
+  - "**/*.h2.db"
+  - "**/*.mv.db"
+
+- name: "DuckDB"
+  type: any
+  glob:
+  - "**/*.duckdb"
+
+- name: "MongoDB"
+  type: any
+  glob:
+  - "**/mongodb/**/*.wt"
+  - "**/WiredTiger.wt"
+  - "**/*.bson"
+
+- name: "Redis"
+  type: any
+  glob:
+  - "**/dump.rdb"
+  - "**/*.rdb"
+  - "**/appendonly.aof"
+  - "**/appendonlydir/*.aof"
+
+- name: "CouchDB"
+  type: any
+  glob:
+  - "**/*.couch"
+
+- name: "Cassandra"
+  type: any
+  glob:
+  - "**/cassandra/data/**/*-Data.db"
+
+- name: "Neo4j"
+  type: any
+  glob:
+  - "**/neo4j/data/dbms/auth"
+  - "**/neo4j/data/dbms/auth.ini"
+  - "**/neo4j/data/databases/**"
+
+- name: "Elasticsearch and OpenSearch"
+  type: any
+  glob:
+  - "**/elasticsearch/data/**"
+  - "**/opensearch/data/**"
+
+- name: "InfluxDB"
+  type: any
+  glob:
+  - "**/influxdb/**/*.tsm"
+  - "**/influxd.bolt"
+
+- name: "etcd"
+  type: any
+  glob:
+  - "**/member/snap/db"
+  - "**/etcd/**/*.snap"
+
+- name: "LevelDB"
+  type: any
+  glob:
+  - "**/leveldb/*.ldb"
+  - "**/leveldb/*.log"
+
+- name: "LMDB"
+  type: any
+  glob:
+  - "**/data.mdb"
+
+- name: "Realm"
+  type: any
+  glob:
+  - "**/*.realm"
