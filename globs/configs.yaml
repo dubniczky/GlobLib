@@ -1,4 +1,4 @@
-file: configuration.yaml
+file: configs.yaml
 description: Common configuration file path globs on Linux systems
 author: Richard A. Dubniczky
 items:

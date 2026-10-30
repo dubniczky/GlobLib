@@ -1,4 +1,4 @@
-file: flag.yaml
+file: flags.yaml
 description: Common CTF flag locations in cybersecurity challenges
 author: Richard A. Dubniczky
 items:
