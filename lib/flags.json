@@ -1,0 +1,31 @@
+{
+    "file": "flags.yaml",
+    "description": "Common CTF flag locations in cybersecurity challenges",
+    "author": "Richard A. Dubniczky",
+    "items": [
+        {
+            "name": "Generic flag file",
+            "type": "txt",
+            "glob": [
+                "**/flag.txt",
+                "**/flag*"
+            ]
+        },
+        {
+            "name": "OffSec",
+            "type": "txt",
+            "glob": [
+                "**/local.txt",
+                "**/proof.txt"
+            ]
+        },
+        {
+            "name": "Hack the Box, TyHackMe",
+            "type": "txt",
+            "glob": [
+                "**/user.txt",
+                "**/root.txt"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+[items]
+[[items]]
+name = "Generic flag file"
+type = "txt"
+glob = [
+    "**/flag.txt",
+    "**/flag*",
+]
+
+[[items]]
+name = "OffSec"
+type = "txt"
+glob = [
+    "**/local.txt",
+    "**/proof.txt",
+]
+
+[[items]]
+name = "Hack the Box, TyHackMe"
+type = "txt"
+glob = [
+    "**/user.txt",
+    "**/root.txt",
+]
+

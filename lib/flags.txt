@@ -1,0 +1,6 @@
+**/flag.txt
+**/flag*
+**/local.txt
+**/proof.txt
+**/user.txt
+**/root.txt

@@ -1,0 +1,4 @@
+name,type,glob 1,glob 2
+Generic flag file,txt,**/flag.txt,**/flag*
+OffSec,txt,**/local.txt,**/proof.txt
+"Hack the Box, TyHackMe",txt,**/user.txt,**/root.txt
