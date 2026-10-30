@@ -1,12 +1,12 @@
 # GlobLib
 
-A list of glob search patterns for finding files in Linux systems.
+A list of glob search patterns for finding files on Linux systems.
 
-Getting a list of installed applications on Linux can be a useful source of information on CTFs and peentration testing engagements. However, it's not trivial to find all the installed applications, as they can be scattered in many places. Installed via the default package manager, snap, flatpak, dpkg, custom installer. In some cases we might even be interested in applications that used to be installed but have been removed and their configuration remains. This library contains more than 150 glob patterns to find such configuration files. These files may also contain useful information themselves.
+Getting a list of installed applications for example on Linux can be a useful source of information on CTFs and penetration testing engagements. However, it's not trivial to find all of them, as they can be scattered in many places: installed via the default package manager, snap, flatpak, dpkg, custom installer. In some cases we might even be interested in applications that used to be installed but have been removed and their configuration or backup remains. This library contains lists of glob patterns in 5 formats to be loaded into custom software or ran using `globlib.py`.
 
 ## Usage
 
-The `globs` folder contains a list of globs in YAML format. These specify search patterns to find configuration files of many applications. The `alternates` folder has the same patterns in different formats converted from the YAML. Current formats:
+The `lib` folder contains a list of globs in multiple formats. These specify the patterns to search. Current formats:
 - `yaml` (original)
 - `csv`
 - `json`
@@ -36,31 +36,38 @@ shopt -s globstar
 ls **/httpd/**/httpd.conf
 ```
 
-Alternatively, you can use the python script that loads the glob and performs the search:
+Alternatively, you can use the python script (Python 3.13+, no extra packages needed). It walks the filesystem once and checks every path against every glob in the chosen lists. Lists are given by name and loaded from `lib/<name>.json`. A path to a JSON file also works, and `all` searches every list:
+
 ```sh
-python search.py alternates/config.json
+python globlib.py secrets
+python globlib.py secrets databases -r /home -e node_modules
+python globlib.py all --readable --newest -q
 ```
 ```
-Loading glob list from globs/config.json
-Searching for 157 service configs...
-[1] Lampp (ini) - 0
-[2] Apache2 (ini) - 0
-[3] NGINX (dsl) - 0
-[4] WordPress (php) - 0
-[5] MySQL (ini) - 0
-[6] Redis (ini) - 0
-[7] PostreSQL (ini) - 0
-[8] SSH (custom) - 0
-[9] Samba (ini) - 0
-[10] Confluence (xml) - 0
-[11] Tomcat (xml) - 0
-[12] Docker (json) - 0
-[13] Docker Compose (yaml) - 0
-[14] Memcached (ini) - 0
-[15] PHP (ini) - 0
-[16] PHP-FPM (ini) - 0
-[17] Postfix (ini) - 1:
-  - /etc/postfix/main.cf
-[18] Dovecot (ini) - 0
-...
+  GigaGlobs  /  ·  secrets  · 38 entries
+
+  secrets  Common files used to store secrets
+  ● AWS  ini · 1 match
+       116 B  /home/user/.aws/credentials
+  ● SSH keys  custom · 2 matches
+       411 B  /home/user/.ssh/id_ed25519
+        98 B  /home/user/.ssh/id_ed25519.pub
+
+  ✓ 3 matches in 2 entries  · 812,331 paths scanned in 4.1s
 ```
+
+| Option | Description |
+|---|---|
+| `-r`, `--root DIR` | Folder to search from (default: `/`) |
+| `-e`, `--exclude TEXT` | Drop matches whose path contains `TEXT` (repeatable) |
+| `-E`, `--regex REGEX` | Drop matches whose path matches `REGEX` (repeatable) |
+| `-n`, `--name TEXT` | Only run entries whose name contains `TEXT` |
+| `-t`, `--type TYPE` | Only run entries of this type (repeatable) |
+| `-l`, `--list` | Show available lists, or the entries of the given lists, without searching |
+| `-q`, `--quiet` | Print only the matched paths |
+| `-f`, `--format` | Output format: `text` (default), `json` or `csv` |
+| `--readable` / `--writable` | Only show paths the current user can read / write |
+| `--min-size` / `--max-size SIZE` | Skip files smaller / larger than `SIZE` (e.g. `1K`, `10M`) |
+| `--newest` | Sort matches from newest to oldest and show when they were last modified |
+| `--no-default-excludes` | Also search `/proc`, `/sys`, `/dev` and `/run` |
+| `--no-color` | Disable colored output (also respects `NO_COLOR`) |
