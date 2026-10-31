@@ -6,38 +6,13 @@ Getting a list of installed applications for example on Linux can be a useful so
 
 ## Usage
 
-The `lib` folder contains a list of globs in multiple formats. These specify the patterns to search. Current formats:
-- `yaml` (original)
-- `csv`
-- `json`
-- `toml`
-- `txt` (one glob each line)
-
-
-Example glob in YAML:
-
-```yaml
-- name: "Apache2"
-  type: ini
-  glob:
-  - "**/apache2/**/apache2.conf"
-  - "**/apache2/**/httpd.conf"
-  - "**/httpd/**/httpd.conf"
-```
-
-These can be ran on Linux systems via code or bash. Running on bash:
-
+Download
 ```sh
-# start bash
-bash
-# enable ** recursive glob search in current shell
-shopt -s globstar
-# search for a glob
-ls **/httpd/**/httpd.conf
+git clone https://github.com/dubniczky/GlobLib
+cd GlobLib
 ```
 
-Alternatively, you can use the python script (Python 3.13+, no extra packages needed). It walks the filesystem once and checks every path against every glob in the chosen lists. Lists are given by name and loaded from `lib/<name>.json`. A path to a JSON file also works, and `all` searches every list:
-
+Run
 ```sh
 python globlib.py secrets
 python globlib.py secrets databases -r /home -e node_modules
@@ -71,3 +46,37 @@ python globlib.py all --readable --newest -q
 | `--newest` | Sort matches from newest to oldest and show when they were last modified |
 | `--no-default-excludes` | Also search `/proc`, `/sys`, `/dev` and `/run` |
 | `--no-color` | Disable colored output (also respects `NO_COLOR`) |
+
+## How it works
+
+The `lib` folder contains a list of globs in multiple formats. These specify the patterns to search. Current formats:
+- `yaml` (original)
+- `csv`
+- `json`
+- `toml`
+- `txt` (one glob each line)
+
+
+Example glob in YAML:
+
+```yaml
+- name: "Apache2"
+  type: ini
+  glob:
+  - "**/apache2/**/apache2.conf"
+  - "**/apache2/**/httpd.conf"
+  - "**/httpd/**/httpd.conf"
+```
+
+These can be ran on Linux systems via code or bash. Running on bash:
+
+```sh
+# start bash
+bash
+# enable ** recursive glob search in current shell
+shopt -s globstar
+# search for a glob
+ls **/httpd/**/httpd.conf
+```
+
+Each `*` matches any character except `/`, while `**` matches any character, effectively traversing all directories. These patterns can be ran on the system searching for files that the current user has access to.
