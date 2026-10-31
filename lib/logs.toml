@@ -1,0 +1,243 @@
+[items]
+[[items]]
+name = "Generic log files"
+type = "log"
+glob = [
+    "**/*.log",
+    "**/*.log.[0-9]*",
+    "**/*_log",
+]
+
+[[items]]
+name = "System log folder"
+type = "log"
+glob = [
+    "**/var/log/**",
+]
+
+[[items]]
+name = "Authentication logs"
+type = "log"
+glob = [
+    "**/var/log/auth.log*",
+    "**/var/log/secure*",
+    "**/var/log/faillog",
+]
+
+[[items]]
+name = "Login records"
+type = "bin"
+glob = [
+    "**/var/log/wtmp*",
+    "**/var/log/btmp*",
+    "**/var/log/lastlog",
+    "**/var/run/utmp",
+]
+
+[[items]]
+name = "Syslog"
+type = "log"
+glob = [
+    "**/var/log/syslog*",
+    "**/var/log/messages*",
+    "**/var/log/kern.log*",
+    "**/var/log/daemon.log*",
+    "**/var/log/debug*",
+    "**/var/log/dmesg*",
+]
+
+[[items]]
+name = "Systemd journal"
+type = "bin"
+glob = [
+    "**/journal/**/*.journal",
+    "**/journal/**/*.journal~",
+]
+
+[[items]]
+name = "Audit and Laurel"
+type = "log"
+glob = [
+    "**/audit/audit.log*",
+    "**/laurel*",
+    "**/laurel/*.log*",
+]
+
+[[items]]
+name = "Sudo"
+type = "log"
+glob = [
+    "**/sudo.log*",
+    "**/sudo-io/**",
+]
+
+[[items]]
+name = "Cron"
+type = "log"
+glob = [
+    "**/var/log/cron*",
+]
+
+[[items]]
+name = "Apache"
+type = "log"
+glob = [
+    "**/apache2/access.log*",
+    "**/apache2/error.log*",
+    "**/apache2/other_vhosts_access.log*",
+    "**/httpd/access_log*",
+    "**/httpd/error_log*",
+    "**/httpd/ssl_access_log*",
+    "**/httpd/ssl_error_log*",
+]
+
+[[items]]
+name = "NGINX"
+type = "log"
+glob = [
+    "**/nginx/access.log*",
+    "**/nginx/error.log*",
+]
+
+[[items]]
+name = "Generic web server logs"
+type = "log"
+glob = [
+    "**/access.log*",
+    "**/error.log*",
+    "**/access_log*",
+    "**/error_log*",
+]
+
+[[items]]
+name = "Tomcat"
+type = "log"
+glob = [
+    "**/catalina.out",
+    "**/catalina.*.log",
+    "**/localhost_access_log*",
+]
+
+[[items]]
+name = "IIS"
+type = "log"
+glob = [
+    "**/LogFiles/W3SVC*/*.log",
+    "**/LogFiles/HTTPERR/*.log",
+]
+
+[[items]]
+name = "Mail"
+type = "log"
+glob = [
+    "**/var/log/mail.log*",
+    "**/var/log/mail.err*",
+    "**/var/log/maillog*",
+]
+
+[[items]]
+name = "FTP"
+type = "log"
+glob = [
+    "**/vsftpd.log*",
+    "**/xferlog*",
+    "**/proftpd/*.log*",
+]
+
+[[items]]
+name = "Samba"
+type = "log"
+glob = [
+    "**/samba/log.*",
+]
+
+[[items]]
+name = "Databases"
+type = "log"
+glob = [
+    "**/mysql/*.log*",
+    "**/mysql/error.log*",
+    "**/mariadb/*.log*",
+    "**/postgresql/*.log*",
+    "**/pg_log/*.log*",
+    "**/mongodb/mongod.log*",
+    "**/redis/redis-server.log*",
+]
+
+[[items]]
+name = "PHP"
+type = "log"
+glob = [
+    "**/php_errors.log*",
+    "**/php*-fpm.log*",
+]
+
+[[items]]
+name = "Laravel"
+type = "log"
+glob = [
+    "**/storage/logs/*.log",
+]
+
+[[items]]
+name = "Ruby on Rails"
+type = "log"
+glob = [
+    "**/log/production.log*",
+    "**/log/development.log*",
+]
+
+[[items]]
+name = "Package manager debug logs"
+type = "log"
+glob = [
+    "**/npm-debug.log*",
+    "**/yarn-error.log",
+    "**/.npm/_logs/*.log",
+    "**/pip.log",
+]
+
+[[items]]
+name = "Package installs"
+type = "log"
+glob = [
+    "**/var/log/dpkg.log*",
+    "**/var/log/apt/history.log*",
+    "**/var/log/apt/term.log*",
+    "**/var/log/yum.log*",
+    "**/var/log/dnf.log*",
+]
+
+[[items]]
+name = "Containers"
+type = "log"
+glob = [
+    "**/docker/containers/*/*-json.log*",
+    "**/var/log/containers/*.log",
+    "**/var/log/pods/**/*.log",
+]
+
+[[items]]
+name = "Windows event logs"
+type = "evtx"
+glob = [
+    "**/*.evtx",
+    "**/winevt/Logs/*.evtx",
+]
+
+[[items]]
+name = "Windows setup logs"
+type = "log"
+glob = [
+    "**/Panther/setupact.log",
+    "**/Panther/UnattendGC/setupact.log",
+    "**/debug/NetSetup.LOG",
+]
+
+[[items]]
+name = "PowerShell transcripts"
+type = "txt"
+glob = [
+    "**/PowerShell_transcript*.txt",
+]
+

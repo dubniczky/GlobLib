@@ -1,0 +1,28 @@
+name,type,glob 1,glob 2,glob 3,glob 4,glob 5,glob 6,glob 7
+Generic log files,log,**/*.log,**/*.log.[0-9]*,**/*_log
+System log folder,log,**/var/log/**
+Authentication logs,log,**/var/log/auth.log*,**/var/log/secure*,**/var/log/faillog
+Login records,bin,**/var/log/wtmp*,**/var/log/btmp*,**/var/log/lastlog,**/var/run/utmp
+Syslog,log,**/var/log/syslog*,**/var/log/messages*,**/var/log/kern.log*,**/var/log/daemon.log*,**/var/log/debug*,**/var/log/dmesg*
+Systemd journal,bin,**/journal/**/*.journal,**/journal/**/*.journal~
+Audit and Laurel,log,**/audit/audit.log*,**/laurel*,**/laurel/*.log*
+Sudo,log,**/sudo.log*,**/sudo-io/**
+Cron,log,**/var/log/cron*
+Apache,log,**/apache2/access.log*,**/apache2/error.log*,**/apache2/other_vhosts_access.log*,**/httpd/access_log*,**/httpd/error_log*,**/httpd/ssl_access_log*,**/httpd/ssl_error_log*
+NGINX,log,**/nginx/access.log*,**/nginx/error.log*
+Generic web server logs,log,**/access.log*,**/error.log*,**/access_log*,**/error_log*
+Tomcat,log,**/catalina.out,**/catalina.*.log,**/localhost_access_log*
+IIS,log,**/LogFiles/W3SVC*/*.log,**/LogFiles/HTTPERR/*.log
+Mail,log,**/var/log/mail.log*,**/var/log/mail.err*,**/var/log/maillog*
+FTP,log,**/vsftpd.log*,**/xferlog*,**/proftpd/*.log*
+Samba,log,**/samba/log.*
+Databases,log,**/mysql/*.log*,**/mysql/error.log*,**/mariadb/*.log*,**/postgresql/*.log*,**/pg_log/*.log*,**/mongodb/mongod.log*,**/redis/redis-server.log*
+PHP,log,**/php_errors.log*,**/php*-fpm.log*
+Laravel,log,**/storage/logs/*.log
+Ruby on Rails,log,**/log/production.log*,**/log/development.log*
+Package manager debug logs,log,**/npm-debug.log*,**/yarn-error.log,**/.npm/_logs/*.log,**/pip.log
+Package installs,log,**/var/log/dpkg.log*,**/var/log/apt/history.log*,**/var/log/apt/term.log*,**/var/log/yum.log*,**/var/log/dnf.log*
+Containers,log,**/docker/containers/*/*-json.log*,**/var/log/containers/*.log,**/var/log/pods/**/*.log
+Windows event logs,evtx,**/*.evtx,**/winevt/Logs/*.evtx
+Windows setup logs,log,**/Panther/setupact.log,**/Panther/UnattendGC/setupact.log,**/debug/NetSetup.LOG
+PowerShell transcripts,txt,**/PowerShell_transcript*.txt

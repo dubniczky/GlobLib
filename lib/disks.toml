@@ -1,0 +1,139 @@
+[items]
+[[items]]
+name = "Hyper-V"
+type = "disk"
+glob = [
+    "**/*.vhd",
+    "**/*.vhdx",
+    "**/*.avhd",
+    "**/*.avhdx",
+    "**/*.vmcx",
+    "**/*.vmrs",
+    "**/*.vsv",
+]
+
+[[items]]
+name = "VMware"
+type = "disk"
+glob = [
+    "**/*.vmdk",
+    "**/*.vmx",
+    "**/*.vmem",
+    "**/*.vmss",
+    "**/*.vmsn",
+]
+
+[[items]]
+name = "VirtualBox"
+type = "disk"
+glob = [
+    "**/*.vdi",
+    "**/*.vbox",
+    "**/Snapshots/*.sav",
+]
+
+[[items]]
+name = "QEMU and KVM"
+type = "disk"
+glob = [
+    "**/*.qcow",
+    "**/*.qcow2",
+    "**/*.qed",
+    "**/libvirt/images/*",
+]
+
+[[items]]
+name = "Parallels"
+type = "disk"
+glob = [
+    "**/*.hdd",
+    "**/*.pvm",
+]
+
+[[items]]
+name = "Virtual appliances"
+type = "disk"
+glob = [
+    "**/*.ova",
+    "**/*.ovf",
+]
+
+[[items]]
+name = "Raw and optical images"
+type = "disk"
+glob = [
+    "**/*.iso",
+    "**/*.img",
+    "**/*.raw",
+    "**/*.dd",
+    "**/*.dsk",
+]
+
+[[items]]
+name = "macOS disk images"
+type = "disk"
+glob = [
+    "**/*.dmg",
+    "**/*.sparseimage",
+    "**/*.sparsebundle",
+]
+
+[[items]]
+name = "Forensic images"
+type = "disk"
+glob = [
+    "**/*.E01",
+    "**/*.e01",
+    "**/*.Ex01",
+    "**/*.aff",
+    "**/*.aff4",
+    "**/*.ad1",
+]
+
+[[items]]
+name = "Backup images"
+type = "disk"
+glob = [
+    "**/*.vbk",
+    "**/*.tib",
+    "**/*.tibx",
+]
+
+[[items]]
+name = "Memory dumps"
+type = "mem"
+glob = [
+    "**/*.dmp",
+    "**/*.mem",
+    "**/*.lime",
+    "**/lsass*.dmp",
+    "**/MEMORY.DMP",
+    "**/Minidump/*.dmp",
+]
+
+[[items]]
+name = "Windows hibernation and page files"
+type = "mem"
+glob = [
+    "**/hiberfil.sys",
+    "**/pagefile.sys",
+    "**/swapfile.sys",
+]
+
+[[items]]
+name = "Linux swap files"
+type = "mem"
+glob = [
+    "**/swapfile",
+    "**/swap.img",
+]
+
+[[items]]
+name = "Core dumps"
+type = "mem"
+glob = [
+    "**/core.[0-9]*",
+    "**/var/crash/*",
+    "**/systemd/coredump/*",
+]
+

@@ -1,0 +1,114 @@
+file: disks.yaml
+description: Disk images, virtual machines and memory dumps that can be mounted or carved for registry hives and hashes
+author: Richard A. Dubniczky
+items:
+
+- name: "Hyper-V"
+  type: disk
+  glob:
+  - "**/*.vhd"
+  - "**/*.vhdx"
+  - "**/*.avhd"
+  - "**/*.avhdx"
+  - "**/*.vmcx"
+  - "**/*.vmrs"
+  - "**/*.vsv"
+
+- name: "VMware"
+  type: disk
+  glob:
+  - "**/*.vmdk"
+  - "**/*.vmx"
+  - "**/*.vmem"
+  - "**/*.vmss"
+  - "**/*.vmsn"
+
+- name: "VirtualBox"
+  type: disk
+  glob:
+  - "**/*.vdi"
+  - "**/*.vbox"
+  - "**/Snapshots/*.sav"
+
+- name: "QEMU and KVM"
+  type: disk
+  glob:
+  - "**/*.qcow"
+  - "**/*.qcow2"
+  - "**/*.qed"
+  - "**/libvirt/images/*"
+
+- name: "Parallels"
+  type: disk
+  glob:
+  - "**/*.hdd"
+  - "**/*.pvm"
+
+- name: "Virtual appliances"
+  type: disk
+  glob:
+  - "**/*.ova"
+  - "**/*.ovf"
+
+- name: "Raw and optical images"
+  type: disk
+  glob:
+  - "**/*.iso"
+  - "**/*.img"
+  - "**/*.raw"
+  - "**/*.dd"
+  - "**/*.dsk"
+
+- name: "macOS disk images"
+  type: disk
+  glob:
+  - "**/*.dmg"
+  - "**/*.sparseimage"
+  - "**/*.sparsebundle"
+
+- name: "Forensic images"
+  type: disk
+  glob:
+  - "**/*.E01"
+  - "**/*.e01"
+  - "**/*.Ex01"
+  - "**/*.aff"
+  - "**/*.aff4"
+  - "**/*.ad1"
+
+- name: "Backup images"
+  type: disk
+  glob:
+  - "**/*.vbk"
+  - "**/*.tib"
+  - "**/*.tibx"
+
+- name: "Memory dumps"
+  type: mem
+  glob:
+  - "**/*.dmp"
+  - "**/*.mem"
+  - "**/*.lime"
+  - "**/lsass*.dmp"
+  - "**/MEMORY.DMP"
+  - "**/Minidump/*.dmp"
+
+- name: "Windows hibernation and page files"
+  type: mem
+  glob:
+  - "**/hiberfil.sys"
+  - "**/pagefile.sys"
+  - "**/swapfile.sys"
+
+- name: "Linux swap files"
+  type: mem
+  glob:
+  - "**/swapfile"
+  - "**/swap.img"
+
+- name: "Core dumps"
+  type: mem
+  glob:
+  - "**/core.[0-9]*"
+  - "**/var/crash/*"
+  - "**/systemd/coredump/*"

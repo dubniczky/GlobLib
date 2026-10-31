@@ -1,0 +1,249 @@
+{
+    "file": "logs.yaml",
+    "description": "Log files that may leak credentials, URLs or debug output, and targets for log poisoning",
+    "author": "Richard A. Dubniczky",
+    "items": [
+        {
+            "name": "Generic log files",
+            "type": "log",
+            "glob": [
+                "**/*.log",
+                "**/*.log.[0-9]*",
+                "**/*_log"
+            ]
+        },
+        {
+            "name": "System log folder",
+            "type": "log",
+            "glob": [
+                "**/var/log/**"
+            ]
+        },
+        {
+            "name": "Authentication logs",
+            "type": "log",
+            "glob": [
+                "**/var/log/auth.log*",
+                "**/var/log/secure*",
+                "**/var/log/faillog"
+            ]
+        },
+        {
+            "name": "Login records",
+            "type": "bin",
+            "glob": [
+                "**/var/log/wtmp*",
+                "**/var/log/btmp*",
+                "**/var/log/lastlog",
+                "**/var/run/utmp"
+            ]
+        },
+        {
+            "name": "Syslog",
+            "type": "log",
+            "glob": [
+                "**/var/log/syslog*",
+                "**/var/log/messages*",
+                "**/var/log/kern.log*",
+                "**/var/log/daemon.log*",
+                "**/var/log/debug*",
+                "**/var/log/dmesg*"
+            ]
+        },
+        {
+            "name": "Systemd journal",
+            "type": "bin",
+            "glob": [
+                "**/journal/**/*.journal",
+                "**/journal/**/*.journal~"
+            ]
+        },
+        {
+            "name": "Audit and Laurel",
+            "type": "log",
+            "glob": [
+                "**/audit/audit.log*",
+                "**/laurel*",
+                "**/laurel/*.log*"
+            ]
+        },
+        {
+            "name": "Sudo",
+            "type": "log",
+            "glob": [
+                "**/sudo.log*",
+                "**/sudo-io/**"
+            ]
+        },
+        {
+            "name": "Cron",
+            "type": "log",
+            "glob": [
+                "**/var/log/cron*"
+            ]
+        },
+        {
+            "name": "Apache",
+            "type": "log",
+            "glob": [
+                "**/apache2/access.log*",
+                "**/apache2/error.log*",
+                "**/apache2/other_vhosts_access.log*",
+                "**/httpd/access_log*",
+                "**/httpd/error_log*",
+                "**/httpd/ssl_access_log*",
+                "**/httpd/ssl_error_log*"
+            ]
+        },
+        {
+            "name": "NGINX",
+            "type": "log",
+            "glob": [
+                "**/nginx/access.log*",
+                "**/nginx/error.log*"
+            ]
+        },
+        {
+            "name": "Generic web server logs",
+            "type": "log",
+            "glob": [
+                "**/access.log*",
+                "**/error.log*",
+                "**/access_log*",
+                "**/error_log*"
+            ]
+        },
+        {
+            "name": "Tomcat",
+            "type": "log",
+            "glob": [
+                "**/catalina.out",
+                "**/catalina.*.log",
+                "**/localhost_access_log*"
+            ]
+        },
+        {
+            "name": "IIS",
+            "type": "log",
+            "glob": [
+                "**/LogFiles/W3SVC*/*.log",
+                "**/LogFiles/HTTPERR/*.log"
+            ]
+        },
+        {
+            "name": "Mail",
+            "type": "log",
+            "glob": [
+                "**/var/log/mail.log*",
+                "**/var/log/mail.err*",
+                "**/var/log/maillog*"
+            ]
+        },
+        {
+            "name": "FTP",
+            "type": "log",
+            "glob": [
+                "**/vsftpd.log*",
+                "**/xferlog*",
+                "**/proftpd/*.log*"
+            ]
+        },
+        {
+            "name": "Samba",
+            "type": "log",
+            "glob": [
+                "**/samba/log.*"
+            ]
+        },
+        {
+            "name": "Databases",
+            "type": "log",
+            "glob": [
+                "**/mysql/*.log*",
+                "**/mysql/error.log*",
+                "**/mariadb/*.log*",
+                "**/postgresql/*.log*",
+                "**/pg_log/*.log*",
+                "**/mongodb/mongod.log*",
+                "**/redis/redis-server.log*"
+            ]
+        },
+        {
+            "name": "PHP",
+            "type": "log",
+            "glob": [
+                "**/php_errors.log*",
+                "**/php*-fpm.log*"
+            ]
+        },
+        {
+            "name": "Laravel",
+            "type": "log",
+            "glob": [
+                "**/storage/logs/*.log"
+            ]
+        },
+        {
+            "name": "Ruby on Rails",
+            "type": "log",
+            "glob": [
+                "**/log/production.log*",
+                "**/log/development.log*"
+            ]
+        },
+        {
+            "name": "Package manager debug logs",
+            "type": "log",
+            "glob": [
+                "**/npm-debug.log*",
+                "**/yarn-error.log",
+                "**/.npm/_logs/*.log",
+                "**/pip.log"
+            ]
+        },
+        {
+            "name": "Package installs",
+            "type": "log",
+            "glob": [
+                "**/var/log/dpkg.log*",
+                "**/var/log/apt/history.log*",
+                "**/var/log/apt/term.log*",
+                "**/var/log/yum.log*",
+                "**/var/log/dnf.log*"
+            ]
+        },
+        {
+            "name": "Containers",
+            "type": "log",
+            "glob": [
+                "**/docker/containers/*/*-json.log*",
+                "**/var/log/containers/*.log",
+                "**/var/log/pods/**/*.log"
+            ]
+        },
+        {
+            "name": "Windows event logs",
+            "type": "evtx",
+            "glob": [
+                "**/*.evtx",
+                "**/winevt/Logs/*.evtx"
+            ]
+        },
+        {
+            "name": "Windows setup logs",
+            "type": "log",
+            "glob": [
+                "**/Panther/setupact.log",
+                "**/Panther/UnattendGC/setupact.log",
+                "**/debug/NetSetup.LOG"
+            ]
+        },
+        {
+            "name": "PowerShell transcripts",
+            "type": "txt",
+            "glob": [
+                "**/PowerShell_transcript*.txt"
+            ]
+        }
+    ]
+}

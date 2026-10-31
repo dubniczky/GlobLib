@@ -1,0 +1,15 @@
+name,type,glob 1,glob 2,glob 3,glob 4,glob 5,glob 6,glob 7
+Hyper-V,disk,**/*.vhd,**/*.vhdx,**/*.avhd,**/*.avhdx,**/*.vmcx,**/*.vmrs,**/*.vsv
+VMware,disk,**/*.vmdk,**/*.vmx,**/*.vmem,**/*.vmss,**/*.vmsn
+VirtualBox,disk,**/*.vdi,**/*.vbox,**/Snapshots/*.sav
+QEMU and KVM,disk,**/*.qcow,**/*.qcow2,**/*.qed,**/libvirt/images/*
+Parallels,disk,**/*.hdd,**/*.pvm
+Virtual appliances,disk,**/*.ova,**/*.ovf
+Raw and optical images,disk,**/*.iso,**/*.img,**/*.raw,**/*.dd,**/*.dsk
+macOS disk images,disk,**/*.dmg,**/*.sparseimage,**/*.sparsebundle
+Forensic images,disk,**/*.E01,**/*.e01,**/*.Ex01,**/*.aff,**/*.aff4,**/*.ad1
+Backup images,disk,**/*.vbk,**/*.tib,**/*.tibx
+Memory dumps,mem,**/*.dmp,**/*.mem,**/*.lime,**/lsass*.dmp,**/MEMORY.DMP,**/Minidump/*.dmp
+Windows hibernation and page files,mem,**/hiberfil.sys,**/pagefile.sys,**/swapfile.sys
+Linux swap files,mem,**/swapfile,**/swap.img
+Core dumps,mem,**/core.[0-9]*,**/var/crash/*,**/systemd/coredump/*
